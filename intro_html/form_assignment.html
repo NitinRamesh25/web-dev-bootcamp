@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Assignment</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form action="" method="POST">
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" placeholder="John" required>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Smith" required>
+        </div>
+
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="other">Male</label>
+            <input type="radio" id="other" name="gender" value="other">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="your email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required pattern=".{5,10}">
+        </div>
+
+        <div>
+            <label>Birthday:</label>
+            <select name="birthday_month">
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+            </select>
+            <select name="birthday_day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select name="birthday_year">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="terms_conditions">I agree to the terms and conditions</label>
+            <input type="checkbox" name="terms_conditions" id="terms_conditions">
+        </div>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

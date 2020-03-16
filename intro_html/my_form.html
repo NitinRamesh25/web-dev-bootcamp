@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Form</title>
+</head>
+
+<body>
+    <h1>Sign-In</h1>
+    <form action="http://www.wikipedia.org" method="POST">
+        <label for="username">UserName:</label>
+        <input id="username" name="username" type="email" placeholder="email" required>
+
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" placeholder="password" required>
+
+        <input type="submit">
+    </form>
+
+    <!--the 'for' attribute in label should match 'id' of input-->
+    <!--the 'name' attribute is what gets sent in a 'post/get' request-->
+    <!--give same 'name' value to 'radio' input so that only one may be selected-->
+    <form>
+        <label for="dogs">Dogs: </label>
+        <input id="dogs" name="petChoice" type="radio" value="dog">
+
+        <label for="cats">Cats:</label>
+        <input id="cats" name="petChoice" type="radio" value="cat">
+
+        <p>What's your favourite color ?</p>
+        <select name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+
+        <textarea name="multi_line_text" cols="100" rows="10"></textarea>
+
+        <button>Go!</button>
+    </form>
+</body>
+
+</html>
