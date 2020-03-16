@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+    border: 5px solid purple;
+}
+
+h4 {
+    background-color: rgb(255, 100, 80);
+}
+
+li {
+    color: white;
+}
+
+body {
+    background: url(https://lh3.googleusercontent.com/proxy/GCNL_EqLoRJDlYG0kRQuAWl2kjks2rut3l7cDHgs9IgSmOjcAg7QEZkm1YjA-IN20AzsxN85fqwbTqkl4W9-nYsqAmwbWmIjPH4alHvzJSZ7rAS27LrtXbsyTiBt9uhTNpDEZvUxc_o0otqw5I_PQok12Ggr8qTi5XO3fqc);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
