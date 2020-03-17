@@ -1,0 +1,53 @@
+/*Font Family*/
+
+h1 {
+    font-family: "Times New Roman";
+}
+
+p {
+    font-family: Monserrat;
+}
+
+/*Font size*/
+
+h1 {
+    font-size: 50px;
+}
+
+/*font size using em uses relative size*/
+
+span {
+    font-size: 2.0em;
+}
+
+/*Font weight*/
+
+span {
+    font-weight: bold;
+}
+
+/*Line height (spacing between lines)*/
+
+p {
+    line-height: 1.5;
+}
+
+/*Text align*/
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+/*Text decoration*/
+
+h1 {
+    text-decoration: underline;
+}
+
+span {
+    text-decoration: line-through;
+}
