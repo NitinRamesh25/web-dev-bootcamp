@@ -1,0 +1,28 @@
+#blogDiv {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Source Sans Pro';
+    width: 70%;
+    border: 20px solid #bdc3c7    
+}
+
+.date{
+    color: #3498db;
+    text-transform: uppercase;
+    text-decoration: s;
+    letter-spacing: 2px;
+}
+
+.postTitle{
+    text-transform: capitalize;
+}
+
+.summary{
+    border-left: 10px solid #bdc3c7;
+    padding-left: 10px;
+}
+
+hr{
+    color: #f1f1f1;
+}
