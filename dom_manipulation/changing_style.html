@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+    <style>
+        .red-font {
+            color: red;
+        }
+
+        .blue-font {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM Manipulation</h1>
+
+    <script>
+        // getElementById()
+        // getElementsByClassName()
+        // querySelectorAll()
+
+        var h1 = document.querySelector("h1");
+        var isBlue = false;
+        setInterval(() => {
+            if (isBlue) {
+                h1.classList.add("red-font");
+                h1.classList.remove("blue-font");
+            } else {
+                h1.classList.add("blue-font");
+                h1.classList.remove("red-font");
+            }
+
+            isBlue = !isBlue;
+        }, 1000);
+    </script>
+</body>
+
+</html>
