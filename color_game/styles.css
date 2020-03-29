@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #232323;
+    font-family: "Montserrat";
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#header {
+    background-color: #00a8cc;
+}
+
+#toolBar {
+    background-color: #faf4ff;
+    width: 100%;
+    text-align: center;
+}
+
+.square {
+    width: 30%;
+    padding-bottom: 30%;
+    margin: 1.66%;
+    float: left;
+    background-color: purple;
+    border-radius: 10%;
+}
+
+.square-container {
+    max-width: 600px;
+    margin: 50px auto;
+    height: 100%;
+}
+
+#selectedColor {
+    font-size: 7vw;
+}
