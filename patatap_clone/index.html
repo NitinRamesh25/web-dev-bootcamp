@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Patatap Clone</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.3/howler.min.js"></script>
+    <script type="text/javascript" src="assets/js/lib/paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+
+        var soundList = [];
+        var soundFiles = ["bubbles", "clay", "confetti", "corona", "dotted-spiral", 
+                          "flash-1", "glimmer", "moon", "pinwheel", "splits"];
+
+        for(var i = 0; i < soundFiles.length; i++)
+            soundList.push(new Howl({
+                src: ["assets/sounds/" + soundFiles[i] + ".mp3"]
+            }));
+
+        var circles = [];
+
+        function onKeyDown(event) {
+            var maxPoint = new Point(view.size.width, view.size.height);
+            var circle = new Path.Circle({
+                center: maxPoint * Point.random(),
+                radius: 300,
+                fillColor: "rgb(" + Math.random() * 255 + ", " + Math.random() * 255 + ", " + Math.random() * 255 + ")"
+            });
+            circles.push(circle);
+            soundList[Math.floor(Math.random() * soundList.length)].play();
+        }
+
+        function onFrame(event) {
+            for(var i = 0; i < circles.length; i++) {
+                circles[i].fillColor.hue += 3;
+                circles[i].scale(0.92);
+            }
+        }
+       
+    </script>
+
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>
