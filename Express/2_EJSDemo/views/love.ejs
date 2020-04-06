@@ -1,0 +1,19 @@
+<%- include ("partials/header") %> 
+
+<h1>You fell in love with <%= thingVar %> </h1>
+
+<% if(thingVar === "coding") { %> 
+    <p>Good choice</p>
+<% } else { %> 
+    <p>Bad choice, you should've said coding!</p>
+<% } %> 
+
+<!-- there are three types of tags
+    <%=  %> (computes something and embeds that in the html)
+    and 
+    <%  %> (logics, conditions and loops)
+    and
+    <%-  %> include partial file
+-->
+
+<%- include ("partials/footer") %> 
